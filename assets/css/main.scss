@@ -59,7 +59,7 @@ html, body {
 #mainHeader{
     margin-top: 24px;
     margin-left: 24px;
-    position: sticky;
+    // position: sticky;
     left: 24px;
     top: 24px;
     background-color: white;
@@ -86,20 +86,43 @@ p{
 }
 
 #nav{
+    position: relative;
     display: flex;
     flex-direction: row;
-    position: relative;
+    justify-content: start;    
+    align-items: center;
+    gap: 24px;                 
+    margin-top: 8px;
+
+     #squiggleBox {
+        position: absolute;
+        left: 0; // JS will override
+        top: 0;  // JS will override
+        width: 0; // JS will override
+        height: 24px; // or whatever height you want for the squiggle
+        pointer-events: none;
+        z-index: 1;
+        display: block;
+    }
+
+    #squiggle {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
 
     .nav-item{
-        margin-right: 8px;
+        position: relative;
+        margin: 0;                  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
+       
     }
     nav{
-         display: inline-block;
-        padding: 0;
-  margin: 0;
-  border: none;
-  background: none;
+        display: block; // Make nav a block so it fills .nav-item width
         font-family: drawn;
         color: black;
         font-size: 24px;
@@ -187,7 +210,7 @@ p{
 }
 
 @media (max-width: 900px) {
-  #mainContent {
+   #mainContent {
     grid-template-rows: auto 1fr;
   }
 
@@ -212,7 +235,7 @@ p{
     }
   }
 
-  #aboutPage {
+#aboutPage {
     flex-direction: column-reverse;
     justify-content: end;
     align-items: stretch;
@@ -243,12 +266,8 @@ p{
       }
     }
   }
+
 }
-
-
-
-
-
 
 @media (max-width: 700px) {
   #mainHeader {
@@ -277,10 +296,12 @@ p{
     #nav {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
       margin-top: 8px;
       width: calc(100vw - 16px);
+      gap: 0px;
+      
       
       div{
         margin: 0px;
