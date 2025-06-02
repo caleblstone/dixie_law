@@ -307,6 +307,7 @@ p{
       width: calc(100vw - 16px); // 8px left + 8px right
       margin: 0 8px 32px 8px;    // 8px side margins
       align-items: center;
+      overflow-y: scroll;
 
       .workImage {
         width: 100%;
