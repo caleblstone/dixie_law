@@ -1,0 +1,62 @@
+<!-- <div id="drawingList">
+    
+     {% for post in site.categories.drawing %}
+    
+        <div class="work">
+            
+
+            <div class="workImage">
+                <img src="{{post.image}}" alt="">
+            </div>
+
+            <div class="workText">
+                <div class="work_title">
+                    <p>{{ post.title }}</p>
+                </div>
+        
+                <div class="work_date">
+                    <p>{{ post.production_date }}</p>
+                </div>
+        
+                <div class="work_materials">
+                    <p>{{ post.materials }}</p>
+                </div>
+        
+                <div class="work_dimensions">
+                    <p>{{ post.dimensions }}</p>
+                </div>
+
+            </div>
+        
+            
+                
+        </div>
+
+    {% endfor %}
+
+</div> -->
+
+{% assign categories = "drawing,painting,sculpture" | split: "," %}
+{% assign all_posts = "" | split: "" %}
+{% for category in categories %}
+  {% if site.categories[category] %}
+    {% assign all_posts = all_posts | concat: site.categories[category] %}
+  {% endif %}
+{% endfor %}
+{% assign all_posts = all_posts | uniq %}
+
+<div id="drawingList">
+  {% for post in all_posts %}
+    <div class="work">
+      <div class="workImage">
+        <img src="{{ post.image }}" alt="">
+      </div>
+      <div class="workText">
+        <div class="work_title"><p>{{ post.title }}</p></div>
+        <div class="work_date"><p>{{ post.production_date }}</p></div>
+        <div class="work_materials"><p>{{ post.materials }}</p></div>
+        <div class="work_dimensions"><p>{{ post.dimensions }}</p></div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

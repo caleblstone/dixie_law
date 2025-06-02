@@ -1,0 +1,27 @@
+<div id="mainHeader">
+    <div id="home">
+        <a href="/"><h1>Dixie Law</h1></a>
+    </div>
+    <div id="nav">
+
+            <div class="nav-item">
+                <a href="/painting"><nav class="{% if page.url == '/painting/' %}active{% endif %}">Painting, </nav></a>
+            </div>
+
+            <div class="nav-item">
+                <a href="/drawing" ><nav class="{% if page.url == '/drawing/' %}active{% endif %}">Drawing, </nav></a>
+            </div>
+
+            <div class="nav-item">
+                <a href="/animation"><nav class="{% if page.url == '/animation/' %}active{% endif %}">Animation, </nav></a>
+            </div>
+
+            <div class="nav-item">
+                <a href="/about"><nav class="{% if page.url == '/about/' %}active{% endif %}">About</nav></a>
+            </div>
+
+            <img src="{{ site.baseurl }}/assets/Vector_29.svg" alt="" id="squiggle">
+        
+
+    </div>
+</div>

@@ -1,0 +1,9 @@
+---
+layout: individual_work_layout
+categories: drawing
+title: Untitled 1
+production_date: "2019"
+materials: Risograph prints in staple bound book
+dimensions: 6" x 8.5"
+image: https://ucarecdn.com/987eddf9-3088-4d06-811f-a20bab7677ac/-/preview/447x538/
+---
