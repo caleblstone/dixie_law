@@ -197,6 +197,7 @@ p{
     margin-bottom: 40px;
     left: 12px;
     top: 12px;
+
   }
 
   #drawingList {
@@ -279,10 +280,15 @@ p{
       justify-content: space-evenly;
       align-items: center;
       margin-top: 8px;
+      width: calc(100vw - 16px);
+      
+      div{
+        margin: 0px;
+      }
 
       nav {
-        font-size: 16px;
-        padding: 0 4px;
+        font-size: 4.5vw;
+    
       }
     }
     #squiggle {
