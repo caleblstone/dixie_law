@@ -1,0 +1,9 @@
+---
+layout: work
+categories: painting
+year: hello
+materials: hello again
+dimensions: "93"
+images:
+  - https://ucarecdn.com/31f0fd82-3e92-4d6f-a57e-13dc86b21405/-/resize/2400/-/quality/lightest/-/format/auto/
+---
