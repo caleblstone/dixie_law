@@ -1,0 +1,61 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: fbb66349001efbc7e5ce
+    multiple: true
+  settings:
+    defaultOperations: '/resize/2400/-/quality/lightest/-/format/auto/'
+
+collections:
+  - name: "painting"
+    label: "Painting" 
+    folder: "_posts/painting"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "string", default: "work" }
+      - { label: "Categories", name: "categories", widget: "string", default: "painting" }
+      - { label: "Year", name: "year", widget: "string", required: false }
+      - { label: "Medium", name: "materials", widget: "string", required: false}
+      - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
+      - { label: "Images", name: "images", widget: "image" }
+  - name: "drawing"
+    label: "Drawing" 
+    folder: "_posts/drawing"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "string", default: "work" }
+      - { label: "Categories", name: "categories", widget: "string", default: "drawing" }
+      - { label: "Year", name: "year", widget: "string", required: false }
+      - { label: "Medium", name: "materials", widget: "string", required: false}
+      - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
+      - { label: "Images", name: "images", widget: "image" }
+  - name: "animation"
+    label: "Animation" 
+    folder: "_posts/animation"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "string", default: "work" }
+      - { label: "Categories", name: "categories", widget: "string", default: "animation" }
+      - { label: "Year", name: "year", widget: "string", required: false }
+      - { label: "Medium", name: "materials", widget: "string", required: false}
+      - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
+      - { label: "Images", name: "images", widget: "image" }
+  - name: "about"
+    label: "About" 
+    folder: "_posts/about"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "string", default: "post" }
+      - { label: "Categories", name: "categories", widget: "string", default: "about" }
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
