@@ -14,9 +14,13 @@
         <img src="{{ post.image }}" alt="">
       </div>
       <div class="workText">
-        <div class="work_date"><p>{{ post.production_date }}</p></div>
-        <div class="work_materials"><p>{{ post.materials }}</p></div>
-        <div class="work_dimensions"><p>{{ post.dimensions }}</p></div>
+        <div>
+          <div class="work_materials"><p>{{ post.materials }}</p></div>
+          <div class="work_dimensions"><p>{{ post.dimensions }}</p></div>
+        </div>
+        <div>
+          <div class="work_date"><p>{{ post.production_date }}</p></div>
+        </div>
       </div>
     </div>
   {% endfor %}

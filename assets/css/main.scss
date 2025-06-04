@@ -153,8 +153,17 @@ p{
             }
         }
         .workText{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
             border-top: 1px solid black;
             margin-top: 24px;
+            
+            div{
+              display: flex;
+              flex-direction: column;
+            }
             
             p{
                 margin: 0px;
@@ -344,7 +353,6 @@ p{
         }
       }
       .workText {
-        width: 100vw;
         border-bottom: 1px solid black;
         border-top: none;
         margin-top: 8px;
