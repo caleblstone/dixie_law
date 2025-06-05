@@ -8,6 +8,7 @@ media_library:
     publicKey: fbb66349001efbc7e5ce
     multiple: true
   settings:
+    defaultOperations: "/"
 
 collections:
   - name: "painting"
