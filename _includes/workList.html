@@ -1,4 +1,4 @@
-{% assign categories = "drawing,painting,sculpture" | split: "," %}
+{% assign categories = "drawing,painting,animation" | split: "," %}
 {% assign all_posts = "" | split: "" %}
 {% for category in categories %}
   {% if site.categories[category] %}
