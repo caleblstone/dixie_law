@@ -5,7 +5,7 @@ backend:
 media_library:
   name: uploadcare
   config:
-    publicKey: fbb66349001efbc7e5ce
+    publicKey: d9ad26f0d245fa3d63bb
     multiple: true
 
 
