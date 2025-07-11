@@ -5,5 +5,5 @@ year: "2026"
 materials: Animation
 dimensions: ""
 images:
-  - https://ucarecdn.com/acd8cddb-044d-4e8a-b510-f8bdbaf44b21/
+  - https://5z5qr9ju14.ucarecd.net/4b7d94c4-4fa3-47ba-80d9-10ebd5bad399/
 ---
